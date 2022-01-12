@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instructor Information</title>
+  </head>
+  <body>
+    <h1>Instructors:</h1>
+    <table border="2">
+      <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Instructor</th>
+        <th>Rating</th>
+      </thead>
+      {% for instructor in instructors%}
+      <tr>
+        <td>{{instructor.id}}</td>
+        <td>{{instructor.name}}</td>
+        <td>{{instructor.description}}</td>
+        <td>{{instructor.instructor}}</td>
+        <td>{{instructor.rating}}</td>
+        <td><a href="/delete/{{instructor.id}}">Delete</a></td>
+        <td><a href="/update/{{instructor.id}}">Update</a></td>
+      </tr>
+      {%endfor%}
+    </table>
+    <br/><br/><br/>
+    <a href="/create">Add Instructor</a>
+    <a href="/accounts/logout">Logout</a>
+  </body>
+</html>

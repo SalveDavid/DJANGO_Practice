@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Instructor</title>
+  </head>
+  <body>
+    <h2>Create Instructor</h2>
+    <form method="post">
+      <table>
+        {%csrf_token%}
+        {{form.as_table}}
+       </table>
+        <br/>
+        <input type="submit" name="" value="Save">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'cbvApp/base.html' %}
+{% block body %}
+    <h1>Create Student</h1>
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" value="Save">
+    </form>
+
+
+{% endblock %}

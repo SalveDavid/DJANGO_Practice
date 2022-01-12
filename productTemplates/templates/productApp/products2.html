@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/emp.css' %}">
+  </head>
+  <body>
+    <h1>{{heading}}</h1>
+    <ul>
+      <li>{{product1}}</li>
+      <img src="{% static 'images/remotecar.png'%}"/>
+      <li>{{product2}}</li>
+      <img src="{% static 'images/drone.jfif'%}"/>
+      <li>{{product3}}</li>
+      <img src="{% static 'images/rocketlauncher.jpg'%}"/>
+    </ul>
+  </body>
+</html>
